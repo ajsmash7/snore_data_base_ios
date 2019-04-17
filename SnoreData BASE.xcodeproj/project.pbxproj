@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DC2E2962266A92600AF2A59 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E2952266A92600AF2A59 /* AlertViewController.swift */; };
+		7DC2E2982266AAEA00AF2A59 /* FamilyMemberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E2972266AAEA00AF2A59 /* FamilyMemberDelegate.swift */; };
+		7DC2E29A2266BB1C00AF2A59 /* SleepRecordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E2992266BB1C00AF2A59 /* SleepRecordDelegate.swift */; };
 		E742B336225BF8800060E572 /* SnoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E742B334225BF8800060E572 /* SnoreData.xcdatamodeld */; };
 		E7911C7122539D6200891426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C7022539D6200891426 /* AppDelegate.swift */; };
 		E7911C7322539D6200891426 /* FamilyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C7222539D6200891426 /* FamilyTableViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DC2E2952266A92600AF2A59 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		7DC2E2972266AAEA00AF2A59 /* FamilyMemberDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberDelegate.swift; sourceTree = "<group>"; };
+		7DC2E2992266BB1C00AF2A59 /* SleepRecordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordDelegate.swift; sourceTree = "<group>"; };
 		E742B335225BF8800060E572 /* SnoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnoreData.xcdatamodel; sourceTree = "<group>"; };
 		E7911C6D22539D6200891426 /* SnoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7911C7022539D6200891426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 				E7911C7A22539D6B00891426 /* Assets.xcassets */,
 				E7911C7C22539D6B00891426 /* LaunchScreen.storyboard */,
 				E7911C7F22539D6B00891426 /* Info.plist */,
+				7DC2E2972266AAEA00AF2A59 /* FamilyMemberDelegate.swift */,
+				7DC2E2992266BB1C00AF2A59 /* SleepRecordDelegate.swift */,
 			);
 			path = SnoreData;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 				E7911CA32253A0D900891426 /* AddEditFamilyViewController.swift */,
 				E7911CA72253BB6600891426 /* AddSleepRecordViewController.swift */,
 				E7911CA52253A0E900891426 /* SleepRecordTableViewController.swift */,
+				7DC2E2952266A92600AF2A59 /* AlertViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7911CA42253A0D900891426 /* AddEditFamilyViewController.swift in Sources */,
+				7DC2E2962266A92600AF2A59 /* AlertViewController.swift in Sources */,
+				7DC2E2982266AAEA00AF2A59 /* FamilyMemberDelegate.swift in Sources */,
+				7DC2E29A2266BB1C00AF2A59 /* SleepRecordDelegate.swift in Sources */,
 				E7911CA82253BB6600891426 /* AddSleepRecordViewController.swift in Sources */,
 				E7911C7322539D6200891426 /* FamilyTableViewController.swift in Sources */,
 				E7911C7122539D6200891426 /* AppDelegate.swift in Sources */,

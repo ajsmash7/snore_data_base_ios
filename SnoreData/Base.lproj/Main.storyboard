@@ -185,6 +185,21 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-tN-eWR">
                                         <rect key="frame" x="170.5" y="212" width="34" height="391"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="hiz-gl-AKx" eventType="touchUpInside" id="o15-Dh-Zgw"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-NT-YwI">
+                                        <rect key="frame" x="111" y="603" width="153" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Esb-UK-bsj"/>
+                                        </constraints>
+                                        <state key="normal" title="Delete Family Member">
+                                            <color key="titleColor" red="1" green="0.14568857860000001" blue="0.085274969130000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteFamilyMember:" destination="hiz-gl-AKx" eventType="touchUpInside" id="vAY-Ow-aET"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,6 +213,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YUm-mN-v4J"/>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="wHO-QW-gxW" id="Xtk-GJ-4FY"/>
+                        <outlet property="deleteButton" destination="5mT-NT-YwI" id="BCF-BI-xRx"/>
+                        <outlet property="nameTextField" destination="6KN-pR-JBl" id="3Md-Z3-4Kx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fq-PU-bmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,6 +252,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHJ-PQ-0Zc">
                                         <rect key="frame" x="170.5" y="529" width="34" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="savedButton:" destination="ve7-YG-XLi" eventType="touchUpInside" id="rqe-Xc-VN9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -245,6 +268,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HAg-xE-TV4"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="flV-pt-T58" id="cIp-cE-FOF"/>
+                        <outlet property="hoursInput" destination="7r0-eT-q0M" id="oqn-oO-YVK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b61-8T-bjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,6 +279,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Lo-PO-suF"/>
+        <segue reference="QPI-1v-Bqc"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

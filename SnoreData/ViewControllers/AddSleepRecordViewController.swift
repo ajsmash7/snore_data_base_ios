@@ -15,4 +15,24 @@ class AddSleepRecordViewController: UIViewController {
         navigationItem.title = "Add Sleep Record"
     }
     
+    @IBOutlet var hoursInput: UITextField!
+    @IBOutlet var datePicker: UIDatePicker!
+    
+    var delegate: SleepRecordDelegate?
+    var familyMember: FamilyMember?
+    
+    @IBAction func savedButton(_ sender: Any) {
+        guard let hours = Float((hoursInput?.text)!) else {
+            showAlert(title: "Error", message: "Enter a number of hours")
+            return
+        }
+        if hours < 0 || hours > 24 {
+            showAlert(title: "Error", message: "Enter a number of hours between 0 and 24")
+            return
+        }
+        let date = datePicker.date
+        
+        delegate!.newSleepRecord(familyMember: familyMember!, hours: hours, date: date)
+        self.navigationController?.popViewController(animated: true)
+    }
 }
